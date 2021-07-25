@@ -1,0 +1,158 @@
+
+:root{
+    --primary-color:#084B83;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+}
+
+@media screen and (max-height:640px){
+    body{
+        height:150vh;
+    }
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    margin-top: -1rem;
+    text-transform: capitalize;
+}
+
+nav{
+    text-align: center;
+    padding:1rem 1rem;
+    background-color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.content{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    padding:.5rem 0rem;
+    text-align: center;
+}
+
+.input-boxes{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:0.5rem 0rem;
+    margin-top: -1rem;
+}
+
+.input{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:1rem 0rem;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+input{
+    display:block;
+    height: 2rem;
+    width: 150%;
+    text-align: center;
+    padding:1rem 1rem;
+    margin-top: 1rem;
+}
+
+label{
+    font-size:1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+::placeholder {
+    text-align:center;
+    color: var(--primary-color);
+    font-size: larger;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    margin: 0.25rem auto 0;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+.error{
+    text-align: center;
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+.change{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+table{
+    margin-top: 0.5rem;
+    table-layout: fixed;
+}
+
+table, th, td{
+    padding: 0.5rem 0.5rem;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color) ;
+    border-collapse: collapse;
+}
+th, td {
+    word-wrap: break-word;
+}
+td{
+    min-width: 30px;
+    text-align: center;
+}
+
+.label{
+    color: var(--primary-color);
+    font-size: larger;
+    font-weight: 600;
+}
+
+footer{
+   width: 100vw;
+   height: 2rem;
+   background-color:var(--primary-color);
+   margin-top:auto;
+}
+
+footer p{
+    font-size:1.5rem;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}

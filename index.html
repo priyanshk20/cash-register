@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>Cash Register</nav>
+
+    <main>
+      <div class="content">
+        <h1>Manage Your Cash!</h1>
+        <h3>Enter the bill amount and cash given by the customer below:</h3>
+      </div>
+
+      <div class="input-boxes">
+        <div class="bill-input input">
+          <label for="bill">Bill Amount</label>
+          <input
+            type="number"
+            class="box"
+            id="bill"
+            placeholder="Enter Bill Amount Here.."
+          />
+        </div>
+
+        <div class="cash-input input">
+          <label for="cash">Cash Given</label>
+          <input
+            type="number"
+            class="box"
+            id="cash"
+            placeholder="Enter Cash Given Here.."
+          />
+        </div>
+
+        <button id="btn" type="submit" class="btn">
+            Check
+        </button>
+      </div>
+
+      <div class="error"></div>
+      <div class="change">
+        <div class="label">Return Change:</div>
+        <div id="output">
+            <table>
+                <tr>
+                <th>No.of Notes</td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                <td class="noOfNotes"></td>
+                </tr>
+                <tr>
+                <th>Note</td>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+      <p>Made by <a href="http://github.com/priyanshk20">Priyansh Khandelwal</a></p>
+    </footer>
+
+
+    <script src="/index.js"></script>
+  </body>
+</html>
