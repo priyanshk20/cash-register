@@ -12,7 +12,11 @@ checkBtn.addEventListener('click', () => {
             const amount = cash.value - bill.value;
             calculateChange(amount);
 
-        }else{
+        }
+        if(bill.value===cash.value){
+            sendMessage("No amount to be returned");
+        }
+        else{
             sendMessage("Can You wash plates? 😡");
         }
     }
