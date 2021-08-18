@@ -67,6 +67,7 @@ label{
 
 input{
     display:block;
+    font-size: 20px;
     height: 2rem;
     width: 150%;
     text-align: center;
