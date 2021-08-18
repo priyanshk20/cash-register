@@ -13,13 +13,11 @@ checkBtn.addEventListener('click', () => {
             calculateChange(amount);
 
         }
-        if(bill.value===cash.value){
-            sendMessage("No amount to be returned");
-        }
         else{
             sendMessage("Can You wash plates? 😡");
         }
     }
+
     else{
         sendMessage("Invalid Bill Amount");
     }
